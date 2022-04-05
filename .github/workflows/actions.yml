@@ -13,7 +13,7 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
-          project_name = ${GITHUB_REPOSITORY#*/}
+          project_name=${GITHUB_REPOSITORY#*/}
           echo $project_name
           echo ${GITHUB_REPOSITORY%/*}
           echo "${{ github.token }}"

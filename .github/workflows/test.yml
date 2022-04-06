@@ -25,7 +25,7 @@ jobs:
           mkdir -p $package_folders
           pwd
           ls -a
-          echo "crear temp"
+          echo "crear temporary"
           mkdir -p temporary
           pwd
           ls -a
@@ -37,6 +37,8 @@ jobs:
           destination_path="$base_folder/$package_folder"          
           echo "mover $source_path* $temp_path"
           mv $source_path* $temp_path
+          echo "eliminar $base_folder/com"
+          rm -r "$base_folder/com"
 #          cd $package_folders
 #          mv * $package_folders
 #          mv com/modyo/example/* $package_folder

@@ -26,7 +26,7 @@ jobs:
           pwd
           ls -a
           echo "crear temp"
-          mkdir -p temp
+          mkdir -p temporary
           pwd
           ls -a
           echo "source_path: $base_folder/com/modyo/example/"

@@ -23,6 +23,12 @@ jobs:
           ls -a
           echo "crear $package_folder"
           mkdir -p $package_folder
+          echo "yendo a package_folder: $package_folder"
+          cd $package_folder
+          pwd
+          ls -a
+          echo "yendo a base_folder: $base_folder"
+          cd $base_folder
           pwd
           ls -a
           echo "crear temporary"

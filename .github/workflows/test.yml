@@ -31,8 +31,10 @@ jobs:
           ls -a
           echo "source_path: $base_folder/com/modyo/example/"
           source_path="$base_folder/com/modyo/example/"
-
-
+          echo "temp_path: $base_folder/temporary/"
+          temp_path="$base_folder/temporary/"
+          echo "destination_path: $base_folder/$package_folder"
+          destination_path="$base_folder/$package_folder"          
 
 #          cd $package_folders
 #          mv * $package_folders

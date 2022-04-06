@@ -12,4 +12,5 @@ jobs:
           echo $base_package
           read -r -a package_folders <<< $base_package
           echo "package_folders: $package_folders"
-          for i in $package_folders; do printf "$i "; done
+          echo $package_folders[0]
+          echo $package_folders[1]

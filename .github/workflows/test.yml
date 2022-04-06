@@ -39,6 +39,8 @@ jobs:
           mv $source_path* $temp_path
           echo "eliminar $base_folder/com"
           rm -r "$base_folder/com"
+          echo "mover $temp_path* $destination_path"
+          mv $temp_path* $destination_path
 #          cd $package_folders
 #          mv * $package_folders
 #          mv com/modyo/example/* $package_folder

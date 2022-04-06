@@ -1,0 +1,15 @@
+name: Test Split String
+
+on: [push]
+
+jobs:
+  split-string-into-array:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Split String
+        run: |
+          base_package="com.modyo.package"
+          echo $base_package
+          IFS='.'
+          read -r -a package_folders <<< "$base_package"
+          echo "package_folder: $package_folder"

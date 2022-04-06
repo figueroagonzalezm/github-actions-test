@@ -14,15 +14,15 @@ jobs:
           ls -a
           new_package="com.modyo.package"
           echo $new_package
-          package_folders=${new_package//.//}
-          echo "package_folders: $package_folders"
+          package_folder=${new_package//.//}
+          echo "package_folder: $package_folder"
           base_folder="$(pwd)/src/main/java"
           echo "cd $base_folder"
           cd $base_folder
           pwd
           ls -a
-          echo "crear $package_folders"
-          mkdir -p $package_folders
+          echo "crear $package_folder"
+          mkdir -p $package_folder
           pwd
           ls -a
           echo "crear temporary"
@@ -41,11 +41,11 @@ jobs:
           rm -r "$base_folder/com"
           echo "mover $temp_path* $destination_path"
           mv $temp_path* $destination_path
-#          cd $package_folders
-#          mv * $package_folders
+#          cd $package_folder
+#          mv * $package_folder
 #          mv com/modyo/example/* $package_folder
 #          cd com/modyo/example
-#          read -r -a package_folders <<< $new_package
-#          echo "package_folders: $package_folders"
+#          read -r -a package_folder <<< $new_package
+#          echo "package_folder: $package_folder"
 #          ${temp_path%%/*}
 

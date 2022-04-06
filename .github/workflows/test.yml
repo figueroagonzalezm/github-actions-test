@@ -25,12 +25,12 @@ jobs:
           mkdir -p $package_folders
           echo "crear temp"
           mkdir -p temp
-          # source_path="$base_folder/com/modyo/example/"
-          # temp_path="$base_folder/temp/"
-          # destination_path="$base_folder/$package_folder/"
-          # echo "destination_path: $destination_path
-          # echo "mover $source_path* $temp_path"
-          # mv $source_path* $temp_path
+          source_path="$base_folder/com/modyo/example/"
+          temp_path="$base_folder/temp/"
+          destination_path="$base_folder/$package_folder/"
+          echo "destination_path: $destination_path
+          echo "mover $source_path* $temp_path"
+          mv $source_path* $temp_path
           # echo "eliminar $base_folder/com"
           # rm -r "$base_folder/com"
           # echo "mover $temp_path* $destination_path"

@@ -33,8 +33,8 @@ jobs:
           temp_path="$base_folder/temporary/"
           destination_path="$base_folder/$package_folder/"
           echo "destination_path: $destination_path
-          echo "mover $source_path* $temp_path"
-          mv $source_path* $temp_path
+          # echo "mover $source_path* $temp_path"
+          # mv $source_path* $temp_path
           # echo "eliminar $base_folder/com"
           # rm -r "$base_folder/com"
           # echo "mover $temp_path* $destination_path"

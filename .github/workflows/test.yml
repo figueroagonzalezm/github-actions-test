@@ -29,11 +29,9 @@ jobs:
           mkdir -p temp
           pwd
           ls -a
+          echo "source_path: $base_folder/com/modyo/example/"
           source_path="$base_folder/com/modyo/example/"
-          temp_path="$base_folder/temporary/"
-          echo "destination_path: $base_folder/$package_folder"
-          destination_path="$base_folder/$package_folder"
-          echo "destination_path: $destination_path
+
 
 
 #          cd $package_folders

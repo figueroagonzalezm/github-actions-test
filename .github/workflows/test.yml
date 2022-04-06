@@ -12,4 +12,4 @@ jobs:
           echo $base_package
           IFS='.'
           read -r -a package_folders <<< "$base_package"
-          echo "package_folder: $package_folder"
+          echo "package_folders: $package_folders"

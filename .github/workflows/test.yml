@@ -19,6 +19,9 @@ jobs:
           base_folder="$(pwd)/src/main/java"
           echo "base_folder: $base_folder"
           cd $base_folder
+          pwd
+          ls -a
+          cd $base_folder
           mkdir -p $package_folders
           mkdir -p temp
           source_path="$base_folder/com/modyo/example/"

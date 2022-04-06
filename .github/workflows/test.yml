@@ -35,7 +35,7 @@ jobs:
           rm -r "$base_folder/com"
           echo "mv $temp_path* $destination_path"
           mv $temp_path* $destination_path
-          echo "rm -r $temp_path"
+          echo "eliminando temp_path: $temp_path"
           rm -r $temp_path
           cd $source_path
           pwd

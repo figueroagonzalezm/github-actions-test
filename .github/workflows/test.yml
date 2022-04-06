@@ -22,10 +22,17 @@ jobs:
           echo "base_folder: $base_folder"
           cd $base_folder
           mkdir -p $package_folders
-          echo "mv $base_folder/com/modyo/example/* $base_folder/com/modyo/package"
-          mv $base_folder/com/modyo/example/* $base_folder/com/modyo/package
+          source_path="$base_folder/com/modyo/example/"
+          destination_path="$base_folder/com/modyo/package/"
+          echo "mv $source_path* $destination_path"
+          mv $source_path* $destination_path
+          cd $source_path
           pwd
           ls -a
+          cd $destination_path
+          pwd
+          ls -a
+
 #          cd $package_folders
 #          mv * $package_folders
 #          mv com/modyo/example/* $package_folder

@@ -6,8 +6,12 @@ jobs:
   split-string-into-array:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Split String
         run: |
+          pwd
+          ls -a
           base_package="com.modyo.package"
           echo $base_package
           read -r -a package_folders <<< $base_package
@@ -15,8 +19,8 @@ jobs:
           package_folders=${base_package//.//}
           echo "package_folders: $package_folders"
           mkdir -p $package_folders
-          mv * $package_folders
           cd $package_folders
           pwd
           ls -a
 #          cd $package_folders
+#          mv * $package_folders

@@ -8,12 +8,13 @@ jobs:
     steps:
       - name: Split String
         run: |
-          base_package="com modyo package"
+          base_package="com.modyo.package"
           echo $base_package
           read -r -a package_folders <<< $base_package
           echo "package_folders: $package_folders"
           package_folders=${base_package//.//}
           echo "package_folders: $package_folders"
           mkdir -p $package_folders
+          cd $package_folders
           pwd
           ls -a

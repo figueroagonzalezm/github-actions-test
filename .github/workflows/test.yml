@@ -10,5 +10,6 @@ jobs:
         run: |
           base_package="com modyo package"
           echo $base_package
-          read -r -a package_folders <<< "$base_package"
+          read -r -a package_folders <<< $base_package
           echo "package_folders: $package_folders"
+          for i in $package_folders; do printf "$i "; done

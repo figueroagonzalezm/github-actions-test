@@ -15,6 +15,5 @@ jobs:
           package_folders=${base_package//.//}
           echo "package_folders: $package_folders"
           mkdir -p $package_folders
-          cd $package_folders
           pwd
           ls -a

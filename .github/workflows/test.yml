@@ -18,7 +18,7 @@ jobs:
           echo "package_folders: $package_folders"
           package_folders=${base_package//.//}
           echo "package_folders: $package_folders"
-          base_folder="$pwd/src/main/java"
+          base_folder="$(pwd)/src/main/java"
           echo "base_folder: $base_folder"
           cd $base_folder
           mkdir -p $package_folders

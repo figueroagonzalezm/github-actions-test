@@ -26,7 +26,7 @@ jobs:
           echo "crear temp"
           mkdir -p temp
           source_path="$base_folder/com/modyo/example/"
-          temp_path="$base_folder/temp/"
+          temp_path="$base_folder/temporary/"
           destination_path="$base_folder/$package_folder/"
           echo "destination_path: $destination_path
           echo "mover $source_path* $temp_path"

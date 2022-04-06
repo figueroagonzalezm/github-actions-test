@@ -12,20 +12,24 @@ jobs:
         run: |
           pwd
           ls -a
-          base_package="com.modyo.package"
-          echo $base_package
-          read -r -a package_folders <<< $base_package
-          echo "package_folders: $package_folders"
-          package_folders=${base_package//.//}
+          new_package="com.modyo.package"
+          echo $new_package
+          package_folders=${new_package//.//}
           echo "package_folders: $package_folders"
           base_folder="$(pwd)/src/main/java"
           echo "base_folder: $base_folder"
           cd $base_folder
           mkdir -p $package_folders
+          mkdir -p temp
           source_path="$base_folder/com/modyo/example/"
+          temp_path="$base_folder/temp/"
           destination_path="$base_folder/com/modyo/package/"
-          echo "mv $source_path* $destination_path"
-          mv $source_path* $destination_path
+          echo "mv $source_path* $temp_path"
+          mv $source_path* $temp_path
+          rm -r "$base_folder/com"
+          echo "mv $temp_path* $destination_path"
+          mv $temp_path* $destination_path
+          rm -r $temp_path
           cd $source_path
           pwd
           ls -a
@@ -37,3 +41,7 @@ jobs:
 #          mv * $package_folders
 #          mv com/modyo/example/* $package_folder
 #          cd com/modyo/example
+#          read -r -a package_folders <<< $new_package
+#          echo "package_folders: $package_folders"
+#          ${temp_path%%/*}
+

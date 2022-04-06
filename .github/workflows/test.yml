@@ -21,7 +21,7 @@ jobs:
           cd src/main/java
           mkdir -p $package_folders
           mv com/modyo/example/* $package_folder
-          cd com/modyo/example/
+          cd com/modyo/example
           pwd
           ls -a
 #          cd $package_folders

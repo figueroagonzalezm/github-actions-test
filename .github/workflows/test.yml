@@ -36,6 +36,7 @@ jobs:
           echo "destination_path: $base_folder/$package_folder"
           destination_path="$base_folder/$package_folder"          
           echo "mover $source_path* $temp_path"
+          mv $source_path* $temp_path
 #          cd $package_folders
 #          mv * $package_folders
 #          mv com/modyo/example/* $package_folder

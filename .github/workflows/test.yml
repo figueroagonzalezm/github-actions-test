@@ -20,17 +20,8 @@ jobs:
           echo "package_folders: $package_folders"
           cd src/main/java
           mkdir -p $package_folders
-          cd com/modyo/example/domain
-          pwd
-          ls -a
-          cd ..
-          cd ..
-          cd ..
-          cd ..
-          pwd
-          ls -a
           mv com/modyo/example/* $package_folder
-          cd $package_folders
+          cd com/modyo/example/
           pwd
           ls -a
 #          cd $package_folders

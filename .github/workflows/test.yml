@@ -18,11 +18,15 @@ jobs:
           echo "package_folders: $package_folders"
           package_folders=${base_package//.//}
           echo "package_folders: $package_folders"
-          cd src/main/java
+          base_folder="$pwd/src/main/java"
+          echo "base_folder: $base_folder"
+          cd $base_folder
           mkdir -p $package_folders
-          mv com/modyo/example/* $package_folder
-          cd com/modyo/example
+          echo "mv $base_folder/com/modyo/example/* $base_folder/com/modyo/package"
+          mv $base_folder/com/modyo/example/* $base_folder/com/modyo/package
           pwd
           ls -a
 #          cd $package_folders
 #          mv * $package_folders
+#          mv com/modyo/example/* $package_folder
+#          cd com/modyo/example

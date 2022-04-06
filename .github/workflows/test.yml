@@ -37,6 +37,11 @@ jobs:
           mkdir -p $package_folder
           echo "mover $temp_path* $destination_path"
           mv $temp_path* $destination_path
+          echo "eliminar temp_path: $temp_path"
+          rm -r $temp_path
+          cd $destination_path
+          pwd
+          ls -a
 #          cd $package_folder
 #          mv * $package_folder
 #          mv com/modyo/example/* $package_folder

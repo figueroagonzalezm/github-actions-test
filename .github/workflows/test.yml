@@ -22,7 +22,8 @@ jobs:
           cd src/main/java
           pwd
           ls -a
-          mv com/modyo/example/* $package_folder 
+          mv com/modyo/example/* $package_folder
+          cd $package_folders
           pwd
           ls -a
 #          cd $package_folders

@@ -27,7 +27,8 @@ jobs:
           mkdir -p temp
           source_path="$base_folder/com/modyo/example/"
           temp_path="$base_folder/temp/"
-          destination_path="$base_folder/$package_folder"
+          destination_path="$base_folder/$package_folder/"
+          echo "destination_path: $destination_path
           echo "mv $source_path* $temp_path"
           mv $source_path* $temp_path
           echo "rm -r $base_folder/com"

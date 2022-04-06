@@ -31,8 +31,8 @@ jobs:
           ls -a
           source_path="$base_folder/com/modyo/example/"
           temp_path="$base_folder/temporary/"
-          destination_path="$base_folder/$package_folder/"
-          echo "destination_path: $destination_path
+          # destination_path="$base_folder/$package_folder/"
+          # echo "destination_path: $destination_path
           # echo "mover $source_path* $temp_path"
           # mv $source_path* $temp_path
           # echo "eliminar $base_folder/com"

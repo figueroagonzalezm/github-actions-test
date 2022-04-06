@@ -27,7 +27,7 @@ jobs:
           cd ..
           cd ..
           cd ..
-          mv -r com/modyo/example/* $package_folder
+          mv com/modyo/example/* $package_folder
           cd $package_folders
           pwd
           ls -a
